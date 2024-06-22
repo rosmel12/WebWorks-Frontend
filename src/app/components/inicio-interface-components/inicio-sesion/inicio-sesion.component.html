@@ -1,0 +1,36 @@
+<div class="conteiner" >
+    <div class="form-container">
+    <form [formGroup]="loginForm" autocomplete="off" class="example-form">
+        <H1>Inicio de Sesión</H1>
+        <mat-form-field class="example-full-width">
+          <mat-label>Email</mat-label>
+          <input  matInput 
+          type="email"
+          placeholder="Ex. email" 
+          formControlName="usuario"
+          required>
+        </mat-form-field>
+      
+        <mat-form-field class="example-full-width">
+            <mat-label>Password</mat-label>
+            <input matInput 
+            type="password"
+            placeholder="Ex. password" 
+            formControlName="contraseña"
+            required>
+        </mat-form-field>
+    
+        <button class="button" (click)="login()" color="primary">Ingresar</button>
+    
+    </form>
+    <div class="social-message">
+        <div class="line"></div>
+        <p class="message">Login with social accounts</p>
+        <div class="line"></div>
+    </div>
+    <p class="signup">Don't have an account?
+        <a rel="noopener noreferrer" href="/Registrar" class="">Sign up</a>
+    </p>
+    </div>
+    
+</div>

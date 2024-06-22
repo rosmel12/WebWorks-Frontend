@@ -1,0 +1,87 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color:white;
+}
+
+img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+}
+
+.column1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 60px;
+ 
+  background-image:url("/assets/image/Portada1.jpg");
+  text-align: center;
+
+  width: 100%;
+  height: 665px;
+  color: rgb(189, 47, 47);
+}
+.column2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction:row;
+  text-align: center;
+  margin: 20px;
+  width: 100%;
+  height: 210px;
+  color: rgb(255, 250, 250);
+}
+
+.columnCursoJava{
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction:column;
+  background-image:url("/assets/image/JavaScript.jpg");
+  width: 100%;
+  height: 100%;
+}
+.columnCursoCss{
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction:column;
+  background-image:url("/assets/image/CSS.jpg");
+  width: 100%;
+  height: 100%;
+}
+.columnCursoFrontend{
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction:column;
+  background-image:url("/assets/image/frontend.jpg");
+  width: 100%;
+  height: 100%;
+}
+
+.column3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction:row;
+  text-align: center;
+  width: 100%;
+  height: 500px;
+  color: black;
+}
+.imagesPrecio img{
+ 
+  border-radius: 50px 15%;
+  
+   margin: 100px ;
+}

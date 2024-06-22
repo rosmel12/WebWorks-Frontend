@@ -1,0 +1,27 @@
+<div class="container">
+<mat-toolbar autocomplete="off" class="Color-navbar">
+  <mat-toolbar-row>
+
+    <span>WebWorks</span>
+    <span class="example-spacer"></span>
+    
+    <mat-form-field class="selectInicio">
+      <mat-label>PROYECTOS</mat-label>
+      <mat-select [(value)]="selected" >
+        <mat-option value="Registrar" [routerLink]="'/registrarProyecto'">Registrar</mat-option>
+        <mat-option value="Ver" [routerLink]="'/listProyecto'">Ver</mat-option>
+      </mat-select>
+    </mat-form-field>
+    <mat-form-field class="selectInicio">
+      <mat-label>REPOSITORIOS</mat-label>
+      <mat-select [(value)]="selected">
+        <mat-option value="Registrar" [routerLink]="'/registrarRepositorio'">Registrar</mat-option>
+        <mat-option value="Ver" [routerLink]="'/listRepositorio'">Ver</mat-option>
+        
+      </mat-select>
+    </mat-form-field>
+    <button mat-raised-button class="inicio" color="primary" [routerLink]="'/'">PERFIL</button>
+    <button mat-raised-button class="inicio" color="primary" [routerLink]="'/'">SALIR</button>
+  </mat-toolbar-row>
+</mat-toolbar>
+</div>

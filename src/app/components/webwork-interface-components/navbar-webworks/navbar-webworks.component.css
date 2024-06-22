@@ -1,0 +1,27 @@
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+span {
+    margin: auto;
+    text-align: center;
+  }
+  
+  .example-spacer {
+    flex: 1 1 auto;
+  }
+  
+  .inicio {
+    margin: 10px 10px;
+  }
+  .selectInicio{
+    margin: 10px 10px;
+  }
+  .Color-navbar{
+   
+    height: 70px;
+
+    color: white;
+    background-color:#005F6B;
+  }
