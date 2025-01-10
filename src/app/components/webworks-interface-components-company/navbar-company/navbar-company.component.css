@@ -1,0 +1,65 @@
+.conteiner {
+  display: flex;
+  justify-content: space-between;
+  align-items:center;
+  min-height: 100%;
+  width: 100%;
+  background-color: #005F6B;
+}
+/*contenido inicio*/
+.contenidoInicio {
+  height: 30%;
+  font-size: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items:center ;
+  color: white;
+  cursor: pointer;
+}
+.example-spacer {
+  flex: 1 1  auto;
+}
+/*contenido butones*/
+.form-container {
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  background-color: #005F6B;
+}
+.containerbutton{
+  font-size: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items:center ;
+  color: white;
+  cursor: pointer;
+}
+
+.menu-icon img {
+  width: 30px;
+  height: 30px;
+  border-radius: 2px;
+}
+
+.iconConteiner{
+  display: flex;
+  flex-direction: row;
+  align-items:center ;
+  color:white;
+
+}
+
+.icono{
+  padding: 1rem;
+  color: white;
+}
+
+@media only screen and (max-width: 800px) {
+
+  .textoNombre{
+    display: none;
+  }
+}

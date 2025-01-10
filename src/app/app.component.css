@@ -1,0 +1,47 @@
+/* app.component.css */
+.main-container {
+  display: flex;
+  min-height: 100%;
+
+}
+
+app-navbar-webworks {
+
+  width: 100%;
+  max-width: 140px;
+  background-color: #f0f0f0;
+  /* Puedes cambiar el color de fondo según tus necesidades */
+}
+
+app-navbar-company{
+  width: 100%;
+  max-width: 140px;
+  background-color: #f0f0f0;
+  /* Puedes cambiar el color de fondo según tus necesidades */
+}
+
+.outlet-container {
+  flex-grow: 1; /* Ocupa el espacio restante */
+  min-height: 100%;
+}
+
+router-outlet {
+  width: 100%;
+  /* Asegura que ocupe el 100% del contenedor */
+
+}
+
+@media only screen and (max-width: 800px) {
+
+  app-navbar-webworks {
+    width: 90px;
+    background-color: #f0f0f0;
+    /* Puedes cambiar el color de fondo según tus necesidades */
+  }
+
+  app-navbar-company {
+    width: 90px;
+    background-color: #f0f0f0;
+    /* Puedes cambiar el color de fondo según tus necesidades */
+  }
+}

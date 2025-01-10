@@ -1,0 +1,18 @@
+<div class="container">
+
+    <mat-card appearance="outlined" class="card"  *ngFor="let item of dataSource.data">
+      <div class="information">
+        <h1>Job of {{item.companyName}}</h1>
+        <p> {{item.title}}</p>
+        <p> Position : {{item.position}}</p>
+        <p>{{item.description}}</p>
+        <p>Vacancies : {{item.vacancies}}</p>
+        <p>Postulation date Max : {{item.dateMaxPostulation | date:'dd/MM/yyyy' }}</p>
+      </div>
+      <mat-card-actions align="end">
+        <button mat-button (click)="applyAt(item.id)" [disabled]="check(item.id)" >Apply at</button>
+      </mat-card-actions>
+    </mat-card>
+
+</div>
+

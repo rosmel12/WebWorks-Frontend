@@ -1,0 +1,83 @@
+<div class="container" [formGroup]="cardForm">
+    <div class="card">
+        <div class="card-inner" [ngClass]="{'flip': isFlipped}">
+            <div class="front">
+                <img class="map-img" src="/assets/imagenes/map.png" alt="" >
+                <div class="row">
+                    <img src="/assets/imagenes/chip.png" width=60px  alt="" >
+                    <img src="/assets/imagenes/visa.png" width=60px  alt="">
+                </div>
+                <div class="row card-no">
+                    <p>{{cardForm.get('numberCard')!.value ? cardForm.get('numberCard')!.value.slice(0, 4) : ''}}</p>
+                    <p>{{cardForm.get('numberCard')!.value ? cardForm.get('numberCard')!.value.slice(4, 8):''}}</p>
+                    <p>{{cardForm.get('numberCard')!.value ? cardForm.get('numberCard')!.value.slice(8, 12):''}}</p>
+                    <p>{{cardForm.get('numberCard')!.value ? cardForm.get('numberCard')!.value.slice(12,16):''}}</p>
+                </div>
+                <div class="row card-holder">
+                    <p>CARD HPLDER</p>
+                    <p>VALID TILL</p>
+                </div>
+                <div class="row name">
+                    <p>{{nameUser}}</p>
+                    <p>{{cardForm.get('dateCard')!.value | date:'MM/yyyy'}}</p>
+                </div>
+            </div>
+            <div class="back">
+                <img class="map-img" src="/assets/imagenes/map.png" width="" height=""  alt="" >
+                <div class="bar"></div>
+                <div class="row card-cvv">
+                    <div>
+                        <img src="/assets/imagenes/pattern.png" width="" height="" alt="">
+                    </div>
+                    <p>{{cardForm.get('cvv')!.value }}</p>
+                </div>
+                <div class="row card-text">
+                    <p>this is a virtual card design using HTML and CSS. You can aslo design something like this.</p>
+                </div>
+                <div class="row signature">
+                    <p>CUSTOMER SIGNATURE</p>
+                    <img src="/assets/imagenes/visa.png"  width=80px height="" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="form-container" >
+        <form class="example-form">
+
+            <H1 class="titulo">Agregar Tarjeta</H1>
+
+            <mat-form-field class="example-full-width">
+                <mat-label>Numero de Tarjeta</mat-label>
+                <input matInput type="text" placeholder="numberCard" formControlName="numberCard" required
+                    maxlength="16">
+            </mat-form-field>
+
+            <div class="conteniner_Datos">
+                <mat-form-field class="matIzquierdo">
+                    <mat-label>CVV</mat-label>
+                    <input matInput class="cvv-input"  type="text" placeholder="cvv" formControlName="cvv"
+                        required maxlength="3"  (focus)="onCardFocus()" (blur)="onCardBlur()"
+                        (mouseover)="onCardMouseOver()" (mouseout)="onCardMouseOut()">
+                </mat-form-field>
+
+
+              <mat-form-field class="example-full-width">
+                <mat-label>Fecha de caducidad</mat-label>
+                <input matInput [matDatepicker]="picket" formControlName="dateCard"   required>
+                <mat-hint>MM/YYYY</mat-hint>
+                <mat-datepicker-toggle matIconSuffix [for]="picket"></mat-datepicker-toggle>
+                <mat-datepicker #picket></mat-datepicker>
+              </mat-form-field>
+
+            </div>
+
+            <button class="button" (click)="addOrUpdateCard()" *ngIf="!confirm" color="primary">Add Method Payment</button>
+            <button class="button" (click)="addOrUpdateCard()" *ngIf="confirm" color="primary">Update Method Payment </button>
+            <button class="button" (click)="deleteMethodPayment()" *ngIf="confirm" color="primary"  >Delete Method Payment </button>
+            <button class="button" routerLink="/listMethodPayment" (click)="deleteIdMethodPayment()" color="primary">See Payment</button>
+
+        </form>
+    </div>
+
+</div>

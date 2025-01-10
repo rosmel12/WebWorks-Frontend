@@ -1,0 +1,70 @@
+<div class="conteiner">
+  <form [formGroup]="updateProfileForm" autocomplete="off" class="form-container" >
+
+    <H1>Update Profile</H1>
+
+    <div class="conteniner_Datos">
+      <mat-form-field class="matIzquierdo">
+        <mat-label>RUC</mat-label>
+        <input matInput type="text" placeholder="ruc" formControlName="ruc" required maxlength="11">
+      </mat-form-field>
+
+      <mat-form-field class="example-full-width">
+        <mat-label>Social Reason</mat-label>
+        <input matInput type="text" placeholder="socialReason" formControlName="socialReason" required>
+      </mat-form-field>
+    </div>
+
+    <div class="conteniner_Datos">
+      <mat-form-field class="matIzquierdo">
+        <mat-label>Sector</mat-label>
+        <input matInput type="text" placeholder="sector" formControlName="sector" required >
+      </mat-form-field>
+      <mat-form-field class="example-full-width">
+        <mat-label>Legal Representative</mat-label>
+        <input matInput type="text" placeholder="legalRepresentative" formControlName="legalRepresentative" required>
+      </mat-form-field>
+    </div>
+
+    <mat-form-field class="example-full-width">
+      <mat-label>Description</mat-label>
+      <textarea matInput type="text" placeholder="description" formControlName="description" required></textarea>
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width">
+      <mat-label>Username</mat-label>
+      <input matInput type="text" placeholder="username" formControlName="username" required>
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width" style="color: black">
+      <mat-label>New Password</mat-label>
+      <input matInput [type]="hide() ? 'password' : 'text'" placeholder="newPassword" formControlName="newPassword" required/>
+      <button
+        mat-icon-button
+        matSuffix
+        (click)="clickEvent($event)"
+        [attr.aria-label]="'Hide password'"
+        [attr.aria-pressed]="hide()"
+      >
+        <mat-icon>{{hide() ? 'visibility_off' : 'visibility'}}</mat-icon>
+      </button>
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width" style="color: black">
+      <mat-label>Current Password</mat-label>
+      <input matInput [type]="hideNewPassword() ? 'password' : 'text'" placeholder="password" formControlName="password" required/>
+      <button
+        mat-icon-button
+        matSuffix
+        (click)="clickEventNewPassword($event)"
+        [attr.aria-label]="'Hide password'"
+        [attr.aria-pressed]="hideNewPassword()"
+      >
+        <mat-icon>{{hideNewPassword() ? 'visibility_off' : 'visibility'}}</mat-icon>
+      </button>
+    </mat-form-field>
+
+    <button class="button" (click)="update()"  color="primary">Update</button>
+
+  </form>
+</div>

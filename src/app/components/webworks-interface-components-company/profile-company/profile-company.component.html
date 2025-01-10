@@ -1,0 +1,18 @@
+<div class="conteiner">
+  <div class="card-container"  *ngFor="let item of dataSource.data">
+    <mat-card appearance="outlined" class="card">
+      <div class="information">
+      <h1>Profile Company</h1>
+      <p>Ruc : {{item.ruc}}</p>
+      <p>Social Reason : {{item.socialReason}}</p>
+      <p>Sector : {{item.sector}}</p>
+      <p>Legal Representative : {{item.legalRepresentative}}</p>
+      <p>Description : {{item.description}}</p>
+      <p>Username : {{item.username}}</p>
+      </div>
+      <mat-card-actions align="end">
+        <button mat-button routerLink="/updateProfileCompany">Update</button>
+      </mat-card-actions>
+    </mat-card>
+  </div>
+</div>

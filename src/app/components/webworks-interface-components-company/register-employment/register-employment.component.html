@@ -1,0 +1,40 @@
+<div class="conteiner">
+  <form autocomplete="off" [formGroup]="employmentForm" class="form-container">
+
+    <H1>Registrar Employment</H1>
+
+    <mat-form-field class="example-full-width">
+      <mat-label>Title</mat-label>
+      <input matInput type="text" placeholder="Title" formControlName="title" required>
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width">
+      <mat-label>Position</mat-label>
+      <input matInput type="text" placeholder="Position" formControlName="position" required>
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width">
+      <mat-label>Description</mat-label>
+      <textarea matInput type="text" placeholder="Description" formControlName="description" required></textarea>
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width">
+      <mat-label>Vacancies</mat-label>
+      <input matInput type="number" placeholder="Vacancies" formControlName="vacancies" required>
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width">
+      <mat-label>Date Max of Postulation</mat-label>
+      <input matInput [matDatepicker]="picker" formControlName="dateMaxPostulation">
+      <mat-hint>MM/DD/YYYY</mat-hint>
+      <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+      <mat-datepicker #picker></mat-datepicker>
+    </mat-form-field>
+
+    <button class="button" *ngIf="id==undefined ||false " (click)="addOrUpdate()"  color="primary">Register</button>
+    <button class="button" *ngIf="id!=undefined ||id!=null " (click)="addOrUpdate()"  color="primary">Update</button>
+    <button class="button" routerLink="/listEmployment" color="primary">View Employments</button>
+
+  </form>
+</div>
+

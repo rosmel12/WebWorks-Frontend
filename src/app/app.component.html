@@ -1,0 +1,25 @@
+<!-- app.component.html -->
+<ng-container *ngIf="isInitialView(); else mainContentUser">
+    <app-navbar-inicio *ngIf="currentNavbar === 'inicio'"></app-navbar-inicio>
+    <app-inicio-page *ngIf="currentInicioPage === 'inicio'"></app-inicio-page>
+    <app-footer-inicio *ngIf="currentFooter === 'inicio'"></app-footer-inicio>
+    <router-outlet *ngIf="currentInicioPage==='otro'"></router-outlet>
+</ng-container>
+
+<ng-template #mainContentUser >
+  <div class="main-container" *ngIf="currentNavbarUser === 'user' ; else mainContentCompany">
+    <app-navbar-webworks ></app-navbar-webworks>
+    <div class="outlet-container" >
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</ng-template>
+
+<ng-template #mainContentCompany >
+  <div class="main-container" *ngIf="currentNavbarCompany === 'company'">
+    <app-navbar-company ></app-navbar-company>
+    <div class="outlet-container" >
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</ng-template>

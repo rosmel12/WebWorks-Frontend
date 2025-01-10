@@ -1,0 +1,54 @@
+<div class="conteiner">
+    <div class="form-container">
+
+        <form [formGroup]="loginForm" autocomplete="off" class="example-form">
+            <H1>Inicio de Sesión</H1>
+            <mat-form-field class="example-full-width">
+                <mat-label>Username</mat-label>
+                <input matInput type="text" placeholder="username" formControlName="username" required>
+            </mat-form-field>
+
+
+          <mat-form-field class="example-full-width" style="color: black">
+            <mat-label>Password</mat-label>
+            <input matInput [type]="hide() ? 'password' : 'text'" placeholder="password" formControlName="password" required/>
+            <button
+              mat-icon-button
+              matSuffix
+              (click)="clickEvent($event)"
+              [attr.aria-label]="'Hide password'"
+              [attr.aria-pressed]="hide()"
+            >
+              <mat-icon>{{hide() ? 'visibility_off' : 'visibility'}}</mat-icon>
+            </button>
+          </mat-form-field>
+
+            <button class="button" (click)="login()" color="primary">Login</button>
+
+        </form>
+
+        <div class="social-message">
+            <div class="line"></div>
+            <p class="message">Login with social accounts</p>
+            <div class="line"></div>
+        </div>
+
+        <div class="iconos">
+            <a href="https://www.google.com.pe/?hl=es"><mat-icon class="icono" svgIcon="googleIcon" aria-hidden="false"
+                    aria-label="Example thumbs up SVG icon"></mat-icon></a>
+            <a href="https://github.com/"><mat-icon class="icono" svgIcon="githubIcon" aria-hidden="false"
+                    aria-label="Example thumbs up SVG icon" ></mat-icon></a>
+            <a href="https://x.com/?lang=es"><mat-icon class="icono" svgIcon="xIcon" aria-hidden="false"
+                    aria-label="Example thumbs up SVG icon" ></mat-icon></a>
+            <a href="https://discord.com/"><mat-icon class="icono" svgIcon="discordIcon" aria-hidden="false"
+                    aria-label="Example thumbs up SVG icon" ></mat-icon></a>
+        </div>
+
+        <div>
+            <p class="signup">Don't have an account?
+                <a rel="noopener noreferrer" routerLink="/registrar" class="">Sign up</a>
+            </p>
+        </div>
+    </div>
+
+</div>

@@ -1,0 +1,71 @@
+.conteinerNavbar {
+  height: 10%;
+  width: 100%;
+  background-color: #005F6B;
+}
+
+.conteiner {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  background-color: #005F6B;
+}
+.webworks-link {
+  font-size: 40px;
+  z-index: 2000;
+  cursor: pointer;
+}
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+.buttones {
+  font-size: 100%;
+  padding: 10px 20px 10px 20px;
+  height: 50%;
+  margin: 0 10px 0 10px;
+  cursor: pointer;
+}
+
+.contenidoCheck {
+  display: none;
+}
+
+@media only screen and (max-width: 950px) {
+
+  .contenidoCheck {
+    display: block;
+    position: fixed;
+    z-index: 2000;
+    left: 90%;
+  }
+
+  .contenidoButon {
+    display: none;
+  }
+
+  .contenidoButon.show {
+    background-color: #005F6B;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction:column;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    width: 75%;
+    height: 100%;
+    right: 0;
+    transition: all 0.2s ease-in-out;
+  }
+
+  .buttones {
+    width: 80%;
+    font-size: 100%;
+    border: 2px solid white;
+    border-radius: 10px;
+    height: 30px;
+    margin: 10px 0 10px 0;
+    cursor: pointer;
+  }
+}

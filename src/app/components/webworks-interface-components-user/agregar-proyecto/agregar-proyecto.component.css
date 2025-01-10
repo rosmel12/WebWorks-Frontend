@@ -1,0 +1,34 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height:100%;
+    width: 100%;
+    background-image: linear-gradient(102.2deg, rgba(109, 118, 150, 1) 7.1%, rgba(89, 72, 79, 1) 14.7%, rgba(69, 92, 79, 1) 28%, rgba(204, 85, 67, 1) 43.4%, rgba(237, 181, 121, 1) 60.2%, rgba(219, 230, 175, 1) 76.8%);
+
+  }
+  .form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 360px;
+    border-radius: 0.75rem;
+    background-color: rgba(17, 24, 39, 1);
+    padding: 2rem;
+    color: rgba(243, 244, 246, 1);
+  }
+
+  .example-full-width {
+    width: 100%;
+  }
+
+  .button {
+    width: 100%;
+    background-color: #2364af;
+    border: 1px solid white;
+    border-radius: 20px;
+    padding: 10px 50px;
+    margin: 10px 0px 0px 0px;
+  }

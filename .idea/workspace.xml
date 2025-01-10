@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="6679b22e-0ce9-4001-85d8-4198d2833756" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="TypeScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
+  <component name="ProjectId" id="2p0n5I9eMyl6cwOgZnG9wTLBQ1x" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;npm.Angular CLI Server.executor&quot;: &quot;Run&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;D:\\Arquitectura web\\Trabajo-Final\\WebWorks-Frontend\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Arquitectura web\Trabajo-Final\WebWorks-Frontend\src\app\modelComplement" />
+      <recent name="D:\Arquitectura web\Trabajo-Final\WebWorks-Frontend\src\app" />
+      <recent name="D:\Arquitectura web\Trabajo-Final\WebWorks-Frontend\src\app\model" />
+      <recent name="D:\Arquitectura web\Trabajo-Final\WebWorks-Frontend\src\assets\iconos" />
+      <recent name="D:\Arquitectura web\Trabajo-Final\WebWorks-Frontend\src\app\components" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Angular CLI Server" type="js.build_tools.npm">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-deb605915726-JavaScript-WS-243.22562.222" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6679b22e-0ce9-4001-85d8-4198d2833756" name="Changes" comment="" />
+      <created>1731911677584</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1731911677584</updated>
+      <workItem from="1731911679953" duration="1792000" />
+      <workItem from="1731913584354" duration="15000" />
+      <workItem from="1732322856908" duration="2000" />
+      <workItem from="1732764146707" duration="2032000" />
+      <workItem from="1733527111761" duration="36000" />
+      <workItem from="1733527198774" duration="425000" />
+      <workItem from="1733527643941" duration="8000" />
+      <workItem from="1733527664548" duration="5969000" />
+      <workItem from="1733584089093" duration="8359000" />
+      <workItem from="1733642676166" duration="6151000" />
+      <workItem from="1733684280724" duration="21722000" />
+      <workItem from="1733755778812" duration="5794000" />
+      <workItem from="1733774508056" duration="14931000" />
+      <workItem from="1733808831173" duration="2400000" />
+      <workItem from="1733838716464" duration="25813000" />
+      <workItem from="1733942711871" duration="26772000" />
+      <workItem from="1734023280054" duration="16216000" />
+      <workItem from="1734058364415" duration="9841000" />
+      <workItem from="1734109193248" duration="12615000" />
+      <workItem from="1734154381608" duration="2017000" />
+      <workItem from="1734205304110" duration="13564000" />
+      <workItem from="1734285598487" duration="9364000" />
+      <workItem from="1734322747163" duration="1000" />
+      <workItem from="1734651324041" duration="744000" />
+      <workItem from="1734654954473" duration="1563000" />
+      <workItem from="1734663548087" duration="1186000" />
+      <workItem from="1734824133571" duration="967000" />
+      <workItem from="1734842219819" duration="654000" />
+      <workItem from="1734883192926" duration="8540000" />
+      <workItem from="1734974028473" duration="11804000" />
+      <workItem from="1735003262058" duration="1735000" />
+      <workItem from="1735006514780" duration="12560000" />
+      <workItem from="1735066292865" duration="29555000" />
+      <workItem from="1735155994430" duration="7654000" />
+      <workItem from="1735183527635" duration="2777000" />
+      <workItem from="1735246378698" duration="3307000" />
+      <workItem from="1735254302710" duration="2000" />
+      <workItem from="1735267373882" duration="1000" />
+      <workItem from="1735273982669" duration="3252000" />
+      <workItem from="1735308872507" duration="36913000" />
+      <workItem from="1735401794096" duration="16260000" />
+      <workItem from="1735494266816" duration="6621000" />
+      <workItem from="1736206566182" duration="6255000" />
+      <workItem from="1736285161358" duration="10654000" />
+      <workItem from="1736362059683" duration="2261000" />
+      <workItem from="1736431084074" duration="26036000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/app/components/webworks-interface-components-company/update-profile-company/update-profile-company.component.ts</url>
+          <line>77</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

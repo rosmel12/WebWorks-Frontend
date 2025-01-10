@@ -1,0 +1,84 @@
+.conteiner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 90%;
+  width: 100%;
+  background-image: linear-gradient(102.2deg, rgba(109, 118, 150, 1) 7.1%, rgba(89, 72, 79, 1) 14.7%, rgba(69, 92, 79, 1) 28%, rgba(204, 85, 67, 1) 43.4%, rgba(237, 181, 121, 1) 60.2%, rgba(219, 230, 175, 1) 76.8%);
+}
+
+.form-container {
+
+  text-align: center;
+  width: 40%;
+  height: 450px;
+  max-width: 400px;
+  border-radius: 0.75rem;
+  background-color: rgba(17, 24, 39, 1);
+  padding: 2rem;
+  margin: 50px;
+  color: rgba(243, 244, 246, 1);
+}
+
+.example-form {
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 150px;
+  max-width: 400px;
+  width: 100%;
+}
+
+.iconos{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.icono{
+  padding: 1rem;
+  color: white;
+}
+
+.example-full-width {
+  width: 100%;
+}
+
+
+
+.button {
+  font-size: 100%;
+  width: 100%;
+  background-color: #2364af;
+  border: 1px solid white;
+  border-radius: 15px;
+  padding: 10px 50px;
+  cursor: pointer;
+}
+
+.social-message {
+  display: flex;
+  align-items: center;
+  padding-top: 1rem;
+}
+
+.line {
+  height: 1px;
+  flex: 1 1 0%;
+  background-color: rgba(55, 65, 81, 1);
+}
+
+.social-message .message {
+  font-size: 100%;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  line-height: 1.25rem;
+  color: rgba(156, 163, 175, 1);
+}
+a{
+  color: white;
+}

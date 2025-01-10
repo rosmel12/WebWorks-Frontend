@@ -1,0 +1,48 @@
+<div class="container">
+  <div class="containerForm">
+    <h1>List of Subscription</h1>
+
+    <table mat-table [dataSource]="dataSource" class="tableSubscription">
+
+      <ng-container matColumnDef="dateStart">
+        <th mat-header-cell *matHeaderCellDef> Date Start </th>
+        <td mat-cell *matCellDef="let element"> {{element.dateStart | date:'dd/MM/yyyy HH:mm'}} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="dateEnd">
+        <th mat-header-cell *matHeaderCellDef> Date End </th>
+        <td mat-cell *matCellDef="let element"> {{element.dateEnd | date:'dd/MM/yyyy HH:mm'}} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="amountTotal">
+        <th mat-header-cell *matHeaderCellDef> Amount Total </th>
+        <td mat-cell *matCellDef="let element"> {{element.amountTotal}} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="namePlan">
+        <th mat-header-cell *matHeaderCellDef>Plan</th>
+        <td mat-cell *matCellDef="let element"> {{element.namePlan}} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="numberMethodPayment">
+        <th mat-header-cell *matHeaderCellDef>Method Payment</th>
+        <td mat-cell *matCellDef="let element"> {{element.numberMethodPayment || "null"}} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="namePromotionCode">
+        <th mat-header-cell *matHeaderCellDef>Promotion Code</th>
+        <td mat-cell *matCellDef="let element"> {{element.namePromotionCode || "null"}} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="discountPercentage">
+        <th mat-header-cell *matHeaderCellDef>Percentage</th>
+        <td mat-cell *matCellDef="let element"> {{(element.discountPercentage | percent:'1.0-2'  )|| "null"}} </td>
+      </ng-container>
+
+
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+    </table>
+
+  </div>
+</div>

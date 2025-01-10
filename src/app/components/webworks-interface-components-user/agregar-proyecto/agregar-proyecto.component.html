@@ -1,0 +1,24 @@
+<div class="container">
+    <form autocomplete="off" [formGroup]="projectForm" class="form-container">
+        <H1>Registrar un proyecto</H1>
+        <mat-form-field class="example-full-width">
+            <mat-label>Nombre del proyecto</mat-label>
+            <input matInput type="text" placeholder="name proyecto" formControlName="name" required>
+        </mat-form-field>
+
+      <mat-form-field class="example-full-width">
+        <mat-label>Descripcion</mat-label>
+        <textarea matInput type="text" placeholder="description" formControlName="description" required></textarea>
+      </mat-form-field>
+
+        <mat-form-field class="example-full-width">
+            <mat-label>Lenguaje</mat-label>
+            <input matInput type="text" placeholder="language" formControlName="language" required>
+        </mat-form-field>
+
+        <button class="button" *ngIf="id==undefined ||false " (click)="addOrUpdate()" color="primary">Registrar</button>
+        <button class="button" *ngIf="id!=undefined ||id!=null " (click)="addOrUpdate()" color="primary">Modificar</button>
+        <button class="button" [routerLink]="'/listProyecto'" color="primary">Ver proyectos</button>
+
+    </form>
+</div>

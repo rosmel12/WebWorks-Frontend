@@ -1,0 +1,55 @@
+<div class="container">
+
+  <div class="btnAdd">
+    <button class="Btn" routerLink="/addMethodPayment">
+      Pay
+      <svg viewBox="0 0 576 512" class="svgIcon"><path d="M512 80c8.8 0 16 7.2 16 16v32H48V96c0-8.8 7.2-16 16-16H512zm16 144V416c0 8.8-7.2 16-16 16H64c-8.8 0-16-7.2-16-16V224H528zM64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H512c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zm56 304c-13.3 0-24 10.7-24 24s10.7 24 24 24h48c13.3 0 24-10.7 24-24s-10.7-24-24-24H120zm128 0c-13.3 0-24 10.7-24 24s10.7 24 24 24H360c13.3 0 24-10.7 24-24s-10.7-24-24-24H248z"></path></svg>
+    </button>
+  </div>
+
+  <div class="card"   *ngFor="let item of dataSource.data"  (click)="saveData(item.id)">
+    <div class="card-inner" >
+      <div class="front">
+        <img class="map-img" src="/assets/imagenes/map.png" alt="" >
+        <div class="row">
+          <img src="/assets/imagenes/chip.png" width="60px"  alt="" >
+          <img src="/assets/imagenes/visa.png" width="60px"  alt="" >
+        </div>
+        <div class="row card-no">
+          <p>{{ item.numberCard.slice(0, 4)}}</p>
+          <p>{{ item.numberCard.slice(4, 8)}}</p>
+          <p>{{ item.numberCard.slice(8, 12)}}</p>
+          <p>{{ item.numberCard.slice(12, 16)}}</p>
+        </div>
+        <div class="row card-holder">
+          <p>CARD HPLDER</p>
+          <p>VALID TILL</p>
+        </div>
+        <div class="row name">
+          <p>{{NameUser}}</p>
+          <p>{{item.dateCard | date:'MM/yyyy'}}</p>
+        </div>
+      </div>
+      <div class="back">
+        <img class="map-img" src="/assets/imagenes/map.png" alt="" >
+        <div class="bar"></div>
+        <div class="row card-cvv">
+          <div>
+            <img src="/assets/imagenes/pattern.png" alt="" >
+          </div>
+          <p>{{item.cvv}}</p>
+        </div>
+        <div class="row card-text">
+          <p>this is a virtual card design using HTML and CSS. You can aslo design something like this.</p>
+        </div>
+        <div class="row signature">
+          <p>CUSTOMER SIGNATURE</p>
+          <img src="/assets/imagenes/visa.png" width="80px" alt="" >
+        </div>
+      </div>
+    </div>
+  </div >
+
+
+
+</div>

@@ -1,0 +1,67 @@
+.conteiner {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(102.2deg, rgba(109, 118, 150, 1) 7.1%, rgba(89, 72, 79, 1) 14.7%, rgba(69, 92, 79, 1) 28%, rgba(204, 85, 67, 1) 43.4%, rgba(237, 181, 121, 1) 60.2%, rgba(219, 230, 175, 1) 76.8%);
+}
+
+#chart {
+  width: 400px;
+  height: 200px;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  height: auto;
+  border-radius: 0.75rem;
+  background-color: rgba(17, 24, 39, 1);
+  padding: 2rem;
+  color: rgba(243, 244, 246, 1);
+  margin: auto 50px;
+  text-align: center;
+
+}
+
+ul li {
+  list-style: none;
+}
+
+table {
+  width: 100%;
+  border-radius: 15px;
+  border-color: blueviolet;
+}
+
+.shadow__btn {
+  display: flex;
+  align-items: end;
+  justify-content: end;
+  padding: 10px 20px;
+  border: none;
+  font-size: 17px;
+  color: #fff;
+  border-radius: 7px;
+  letter-spacing: 4px;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: 0.5s;
+  transition-property: box-shadow;
+  margin: 20px 0 0 0;
+}
+
+.shadow__btn {
+  background: rgb(15, 15, 15);
+  box-shadow: 0 0 25px rgb(15, 15, 15);
+}
+
+.shadow__btn:hover {
+  box-shadow: 0 0 5px rgb(15, 15, 15),
+    0 0 25px rgb(15, 15, 15),
+    0 0 50px rgb(15, 15, 15),
+    0 0 100px rgb(15, 15, 15);
+}

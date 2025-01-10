@@ -1,0 +1,49 @@
+.conteiner {
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 90%;
+  width: 100%;
+
+  background-image: linear-gradient(102.2deg, rgba(109, 118, 150, 1) 7.1%, rgba(89, 72, 79, 1) 14.7%, rgba(69, 92, 79, 1) 28%, rgba(204, 85, 67, 1) 43.4%, rgba(237, 181, 121, 1) 60.2%, rgba(219, 230, 175, 1) 76.8%);
+}
+
+.GroupForm{
+  height: 700px;
+  width: 390px;
+  text-align: center;
+  color: rgba(243, 244, 246, 1);
+  border-radius: 0.75rem;
+  background-color: rgba(17, 24, 39, 1);
+  padding: 2rem;
+  margin: 50px;
+}
+
+.conteniner_Datos{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.matIzquierdo{
+  width: 100%;
+  border-radius: 20px;
+  margin: 0 10px 0 0;
+}
+.example-full-width {
+  width: 100%;
+  border-radius: 20px;
+
+}
+
+.button {
+  width: 100%;
+  height: 40px;
+  font-size: 20px;
+  background-color: #2364af;
+  border: 1px solid white;
+  border-radius: 20px;
+  cursor: pointer;
+}

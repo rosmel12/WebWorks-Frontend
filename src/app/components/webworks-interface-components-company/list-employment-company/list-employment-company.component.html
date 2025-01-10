@@ -1,0 +1,63 @@
+<div class="container">
+
+  <div class="formContainer">
+
+    <h1>Employments</h1>
+
+    <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+
+      <ng-container matColumnDef="title">
+        <th mat-header-cell *matHeaderCellDef> Title </th>
+        <td mat-cell *matCellDef="let element"> {{element.title}} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="position">
+        <th mat-header-cell *matHeaderCellDef> Position </th>
+        <td mat-cell *matCellDef="let element"> {{element.position}} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="description">
+        <th mat-header-cell *matHeaderCellDef> Description </th>
+        <td mat-cell *matCellDef="let element"> {{element.description}} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="vacancies">
+        <th mat-header-cell *matHeaderCellDef> Vacancies </th>
+        <td mat-cell *matCellDef="let element"> {{element.vacancies}} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="contracted">
+        <th mat-header-cell *matHeaderCellDef> Contracted </th>
+        <td mat-cell *matCellDef="let element"> {{element.contracted}} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="dateMaxPostulation">
+        <th mat-header-cell *matHeaderCellDef> Contracted </th>
+        <td mat-cell *matCellDef="let element"> {{element.dateMaxPostulation |  date : 'dd/MM/yyyy' }} </td>
+      </ng-container>
+
+      <!-- Acciones Column -->
+      <ng-container matColumnDef="actions">
+        <th mat-header-cell *matHeaderCellDef>Actions</th>
+        <td mat-cell *matCellDef="let element;">
+          <button mat-icon-button color="primary" (click)="saveIdEmployment(element.id)" routerLink="/addOrUpdateEmployment">
+            <mat-icon aria-label="Edit">edit</mat-icon>
+          </button>
+
+          <button mat-icon-button color="primary" (click)="deleteEmployment(element.id)">
+            <mat-icon aria-label="Delete">delete</mat-icon>
+          </button>
+        </td>
+      </ng-container>
+
+
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+    </table>
+
+    <button class="shadowBtn" routerLink="/addOrUpdateEmployment">
+      Add Employment
+    </button>
+  </div>
+
+</div>

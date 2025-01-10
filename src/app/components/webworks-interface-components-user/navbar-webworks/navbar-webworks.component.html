@@ -1,0 +1,48 @@
+<mat-toolbar class="container">
+  <div class="contenidoInicio" [routerLink]="'/pageUser'">
+    <span>W</span>
+    <span>E</span>
+    <span>B</span>
+    <span>W</span>
+    <span>O</span>
+    <span>R</span>
+    <span>K</span>
+    <span>S</span>
+  </div>
+  <div class="containerButton" >
+
+    <div class="iconContainer" [routerLink]="'/pageUser'">
+      <mat-icon class="icono" svgIcon="inicioIcon" aria-hidden="false" aria-label="Example thumbs up SVG icon">
+      </mat-icon>
+      <span class="textoNombre">Inicio</span>
+    </div>
+
+    <div class="iconContainer" [routerLink]="'/subscription'">
+      <mat-icon class="icono" svgIcon="carritoIcon" aria-hidden="false" aria-label="Example thumbs up SVG icon">
+      </mat-icon>
+      <span class="textoNombre">Carrito</span>
+    </div>
+
+    <div class="iconContainer" [routerLink]="'/listMethodPayment'">
+      <mat-icon class="icono" svgIcon="cardIcon" aria-hidden="false" aria-label="Example thumbs up SVG icon">
+      </mat-icon>
+      <span class="textoNombre">Tarjetas</span>
+    </div>
+
+    <div class="iconContainer" [routerLink]="'/profileUser'">
+      <mat-icon class="icono" svgIcon="userIcon" aria-hidden="false" aria-label="Example thumbs up SVG icon">
+      </mat-icon>
+      <span class="textoNombre">Perfil</span>
+    </div>
+
+
+    <div class="iconContainer" (click)="logoutUser()">
+      <mat-icon class="icono" svgIcon="salirIcon" aria-hidden="false" aria-label="Example thumbs up SVG icon">
+      </mat-icon>
+      <span class="textoNombre">Logout</span>
+    </div>
+
+  </div>
+
+
+</mat-toolbar>

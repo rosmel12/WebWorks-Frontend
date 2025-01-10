@@ -1,0 +1,152 @@
+<div class="conteiner">
+  <mat-tab-group class="GroupForm" >
+    <mat-tab label="Usuario" class="label">
+    <form [formGroup]="registrarFormUser" autocomplete="off" >
+        <H1>Registrese</H1>
+        <p>Regístrate ahora y obtén un 30% de descuento</p>
+
+        <div class="conteniner_Datos">
+            <mat-form-field class="matIzquierdo">
+                <mat-label>Name</mat-label>
+                <input matInput type="text" placeholder="name" formControlName="name" required>
+            </mat-form-field>
+
+            <mat-form-field class="example-full-width">
+                <mat-label>LastName</mat-label>
+                <input matInput type="text" placeholder="lastname" formControlName="lastname" required>
+            </mat-form-field>
+        </div>
+
+        <div class="conteniner_Datos">
+            <mat-form-field class="matIzquierdo">
+                <mat-label>Phone</mat-label>
+                <input matInput type="text" placeholder="Phone number" formControlName="phone" required maxlength="9">
+            </mat-form-field>
+            <mat-form-field class="example-full-width">
+                <mat-label>Fecha Nacimiento</mat-label>
+                <input matInput [matDatepicker]="picker" formControlName="birthDate">
+                <mat-hint>MM/DD/YYYY</mat-hint>
+                <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+                <mat-datepicker #picker></mat-datepicker>
+            </mat-form-field>
+
+        </div>
+
+        <mat-form-field class="example-full-width">
+            <mat-label>Email</mat-label>
+            <input matInput type="email" placeholder="email@" formControlName="email" required>
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width">
+            <mat-label>Username</mat-label>
+            <input matInput type="text" placeholder="username" formControlName="username" required>
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width" style="color: black">
+        <mat-label>Password<</mat-label>
+        <input matInput [type]="hide() ? 'password' : 'text'" placeholder="password" formControlName="password" required/>
+        <button
+          mat-icon-button
+          matSuffix
+          (click)="clickEvent($event)"
+          [attr.aria-label]="'Hide password'"
+          [attr.aria-pressed]="hide()"
+        >
+          <mat-icon>{{hide() ? 'visibility_off' : 'visibility'}}</mat-icon>
+        </button>
+      </mat-form-field>
+
+        <mat-form-field class="example-full-width" style="color: black">
+        <mat-label>Confirm Password</mat-label>
+        <input matInput [type]="hideConfirmPassword() ? 'password' : 'text'" placeholder="confirmPassword" formControlName="confirmPassword" required/>
+        <button
+          mat-icon-button
+          matSuffix
+          (click)="clickEventConfirmPassword($event)"
+          [attr.aria-label]="'Hide password'"
+          [attr.aria-pressed]="hideConfirmPassword()"
+        >
+          <mat-icon>{{hideConfirmPassword() ? 'visibility_off' : 'visibility'}}</mat-icon>
+        </button>
+      </mat-form-field>
+
+      <button class="button" (click)="registrarUser()" color="primary">Registrarse</button>
+
+    </form>
+    </mat-tab>
+
+    <mat-tab label="Empresa">
+      <form [formGroup]="registrarFormCompany" autocomplete="off" >
+
+        <H1>Registrese</H1>
+
+      <div class="conteniner_Datos">
+        <mat-form-field class="matIzquierdo">
+          <mat-label>RUC</mat-label>
+          <input matInput type="text" placeholder="ruc" formControlName="ruc" required maxlength="11">
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width">
+          <mat-label>Social Reason</mat-label>
+          <input matInput type="text" placeholder="socialReason" formControlName="socialReason" required>
+        </mat-form-field>
+      </div>
+
+      <div class="conteniner_Datos">
+        <mat-form-field class="matIzquierdo">
+          <mat-label>Sector</mat-label>
+          <input matInput type="text" placeholder="sector" formControlName="sector" required >
+        </mat-form-field>
+        <mat-form-field class="example-full-width">
+          <mat-label>Legal Representative</mat-label>
+          <input matInput type="text" placeholder="legalRepresentative" formControlName="legalRepresentative" required>
+        </mat-form-field>
+      </div>
+
+
+        <mat-form-field class="example-full-width">
+          <mat-label>Description</mat-label>
+          <textarea matInput type="text" placeholder="description" formControlName="description" required></textarea>
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width">
+        <mat-label>Username</mat-label>
+        <input matInput type="text" placeholder="username" formControlName="username" required>
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width" style="color: black">
+          <mat-label>Password</mat-label>
+          <input matInput [type]="hideCompany() ? 'password' : 'text'" placeholder="password" formControlName="password" required/>
+          <button
+            mat-icon-button
+            matSuffix
+            (click)="clickEventCompany($event)"
+            [attr.aria-label]="'Hide password'"
+            [attr.aria-pressed]="hideCompany()"
+          >
+            <mat-icon>{{hideCompany() ? 'visibility_off' : 'visibility'}}</mat-icon>
+          </button>
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width" style="color: black">
+          <mat-label>Confirm Password</mat-label>
+          <input matInput [type]="hideConfirmPasswordCompany() ? 'password' : 'text'" placeholder="confirmPassword" formControlName="confirmPassword" required/>
+          <button
+            mat-icon-button
+            matSuffix
+            (click)="clickEventConfirmPasswordCompany($event)"
+            [attr.aria-label]="'Hide password'"
+            [attr.aria-pressed]="hideConfirmPasswordCompany()"
+          >
+            <mat-icon>{{hideConfirmPasswordCompany() ? 'visibility_off' : 'visibility'}}</mat-icon>
+          </button>
+        </mat-form-field>
+
+      <button class="button" (click)="registrarCompany()" color="primary">Registrarse</button>
+
+    </form>
+
+    </mat-tab>
+
+  </mat-tab-group>
+</div>

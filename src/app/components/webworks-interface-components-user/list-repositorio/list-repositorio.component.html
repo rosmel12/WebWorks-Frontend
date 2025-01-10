@@ -1,0 +1,57 @@
+<div class="container">
+    <div class="formContainer">
+        <H1>LISTA DE REPOSITORIOS</H1>
+        <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+
+            <ng-container matColumnDef="name">
+                <th mat-header-cell *matHeaderCellDef> Name </th>
+                <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+            </ng-container>
+
+            <ng-container matColumnDef="description">
+                <th mat-header-cell *matHeaderCellDef> Descripcion </th>
+                <td mat-cell *matCellDef="let element"> {{element.description}} </td>
+            </ng-container>
+
+            <ng-container matColumnDef="datePublication">
+                <th mat-header-cell *matHeaderCellDef> Fecha de publicacion </th>
+                <td mat-cell *matCellDef="let element"> {{element.dateCreate | date:'dd/MM/yyyy'}} </td>
+            </ng-container>
+
+            <ng-container matColumnDef="quantityProject">
+                <th mat-header-cell *matHeaderCellDef> Proyectos </th>
+                <td mat-cell *matCellDef="let element"> {{element.numberProject}} </td>
+            </ng-container>
+
+            <!-- Acciones Column -->
+            <ng-container matColumnDef="actions">
+                <th mat-header-cell *matHeaderCellDef>Actions</th>
+                <td mat-cell *matCellDef="let element">
+                    <button mat-icon-button matTooltip="Esta accion edita el repositorio"
+                            color="primary" routerLink="/agregarRepositorio" (click)="saveDate(element.id,element.name,element.numberProject)">
+                      <mat-icon aria-label="Edit">edit</mat-icon>
+                    </button>
+
+                    <button mat-icon-button matTooltip="Esta accion elimina el repositorio"
+                            color="primary" (click)="delete(element.id)">
+                        <mat-icon aria-label="Delete">delete</mat-icon>
+                    </button>
+
+                  <button mat-icon-button matTooltip="Agregar proyecto al repositorio"
+                          routerLink="/listProyecto" color="primary" (click)="saveDate(element.id,element.name,element.numberProject)">
+                    <mat-icon svgIcon="projectIcon"></mat-icon>
+                  </button>
+
+                </td>
+            </ng-container>
+            <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+            <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+        </table>
+
+      <button class="shadowBtn" (click)="deleteDateSave()"  >
+            Agrege Repositorios
+      </button>
+
+    </div>
+  <div id="chart"></div>
+</div>

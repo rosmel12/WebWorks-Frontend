@@ -1,0 +1,47 @@
+<div class="conteiner">
+
+  <div class="group">
+    <mat-icon class="icon" svgIcon="busquedaIcon" aria-hidden="false" aria-label="Example thumbs up SVG icon">
+    </mat-icon>
+    <input class="input" type="search" placeholder="Buscar Informacion">
+  </div>
+
+  <div  *ngFor="let item of dataSource.data">
+    <div class="contenido">
+      <h1>Bienvenido</h1>
+      <h2>{{item.socialReason}}</h2>
+    </div>
+  </div>
+
+  <div class="Card-container" >
+
+    <div class="card-container">
+      <mat-card appearance="outlined" class="card">
+        <mat-card-header>
+          <mat-card-title >Employments</mat-card-title>
+          <mat-card-subtitle>Add and See your Employments</mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-actions align="end">
+          <button mat-button routerLink="/listEmployment">Employment</button>
+        </mat-card-actions>
+      </mat-card>
+    </div>
+
+    <div class="card-container">
+      <mat-card appearance="outlined" class="card">
+        <mat-card-header>
+          <mat-card-title>Candidates</mat-card-title>
+          <mat-card-subtitle>see candidates</mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-actions align="end">
+          <button mat-button routerLink="/listJobApplication">Candidates </button>
+        </mat-card-actions>
+      </mat-card>
+    </div>
+
+
+  </div>
+
+
+</div>
+

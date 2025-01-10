@@ -1,0 +1,71 @@
+<div class="container">
+    <div class="group">
+        <mat-icon class="icon" svgIcon="busquedaIcon" aria-hidden="false" aria-label="Example thumbs up SVG icon">
+        </mat-icon>
+        <input class="input" type="search" placeholder="Buscar Informacion">
+    </div>
+
+    <div *ngFor="let item of dataSource.data">
+     <div class="contenido">
+       <h1>Bienvenido</h1>
+       <h2>{{item.name}} {{item.lastname}}</h2>
+     </div>
+   </div>
+
+    <div class="cardContainer" >
+
+      <div class="cardGroup">
+      <mat-card appearance="outlined" class="card">
+        <mat-card-header>
+          <mat-card-title >Repositorios</mat-card-title>
+          <mat-card-subtitle>Agrega y visualiza tus repositorios</mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-actions align="end">
+          <button mat-button routerLink="/listRepositorio">Repositorios</button>
+        </mat-card-actions>
+      </mat-card>
+      </div>
+
+      <div class="cardGroup">
+        <mat-card appearance="outlined" class="card">
+          <mat-card-header>
+            <mat-card-title>Comentarios</mat-card-title>
+            <mat-card-subtitle>Mira los comentarios a los desarrolladores</mat-card-subtitle>
+          </mat-card-header>
+          <mat-card-actions align="end">
+            <button mat-button routerLink="/comment" >Comentarios</button>
+          </mat-card-actions>
+        </mat-card>
+      </div>
+
+      <div class="cardGroup" *ngIf="checkSubscription()">
+        <mat-card appearance="outlined" class="card">
+          <mat-card-header>
+            <mat-card-title>Employments</mat-card-title>
+            <mat-card-subtitle>Encuentra tu trabajo deseado</mat-card-subtitle>
+          </mat-card-header>
+          <mat-card-actions align="end">
+            <button mat-button routerLink="/listEmploymentUser" >Employments</button>
+          </mat-card-actions>
+        </mat-card>
+      </div>
+
+      <div class="cardGroup">
+        <mat-card appearance="outlined" class="card">
+          <mat-card-header>
+            <mat-card-title>Subscripciones</mat-card-title>
+            <mat-card-subtitle>mira tus subscripciones</mat-card-subtitle>
+          </mat-card-header>
+          <mat-card-actions align="end">
+            <button mat-button routerLink="/listSubscription">Subscripciones</button>
+          </mat-card-actions>
+        </mat-card>
+      </div>
+
+    </div>
+
+  <div>
+    <p>Usted no es subscrito tiene 3 repositorios que puede agregar</p>
+  </div>
+
+</div>

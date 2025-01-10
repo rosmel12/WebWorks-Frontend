@@ -1,0 +1,23 @@
+<mat-toolbar class="conteinerNavbar">
+
+  <mat-toolbar class="conteiner">
+
+    <span class="webworks-link" [routerLink]="'/'"> WebWorks </span>
+
+    <span class="example-spacer"></span>
+
+    <div class="contenidoCheck">
+      <button mat-icon-button  aria-label="Example icon-button with menu icon"  (click)="toggleMenu()">
+        <mat-icon>menu</mat-icon>
+      </button>
+    </div>
+    <div class="contenidoButon">
+    <button class="buttones" mat-raised-button color="primary" [routerLink]="'/login'" (click)="eliminar()">Iniciar Sesion</button>
+    <button class="buttones" mat-raised-button color="primary" [routerLink]="'/registrar'" (click)="eliminar()">Registrarse</button>
+    <button class="buttones" mat-raised-button color="primary" [routerLink]="'/listPlanInicio'" (click)="eliminar()">Planes</button>
+    <button class="buttones" mat-raised-button color="primary" [routerLink]="'/'" (click)="eliminar()">Acerca de Nosotros</button>
+    </div>
+
+  </mat-toolbar>
+
+</mat-toolbar>

@@ -1,0 +1,25 @@
+<div class="container" [ngStyle]="{ 'min-height': height }" >
+  <div class="form-container" *ngFor="let item of dataSource.data">
+    <div class="imagenes">
+      <img [src]="item.image" alt="Descripción de la imagen">
+    </div>
+    <div class="contenido">
+      <h1 class="titulo">{{item.name}}</h1>
+      <p *ngIf="item.description1!=null" >- {{item.description1}}</p>
+      <p *ngIf="item.description2!=null" >- {{item.description2}}</p>
+      <p *ngIf="item.description3!=null" >- {{item.description3}}</p>
+      <p *ngIf="item.description4!=null" >- {{item.description4}}</p>
+      <p *ngIf="item.description5!=null" >- {{item.description5}}</p>
+      <p *ngIf="item.description6!=null" >- {{item.description6}}</p>
+      <p *ngIf="item.description7!=null" >- {{item.description7}}</p>
+      <p *ngIf="item.description8!=null" >- {{item.description8}}</p>
+      <p *ngIf="item.maxNumberRepository!=null" >-{{item.maxNumberRepository}} Repositorios</p>
+      <p *ngIf="item.maxNumberProject!=null" >- {{item.maxNumberProject}} Proyectos</p>
+      <p  class="titulo" *ngIf="item.price!=0" >S/.{{item.price}}</p>
+      <p class="titulo" *ngIf="item.price==0">free</p>
+
+    </div>
+    <button class="button" (click)="savePlan(item.id,item.price)"
+      color="primary">Seleccione</button>
+  </div>
+</div>

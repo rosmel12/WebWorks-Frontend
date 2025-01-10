@@ -1,0 +1,73 @@
+.conteiner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100%;
+  min-width: 100%;
+  background-image: linear-gradient(102.2deg, rgba(109, 118, 150, 1) 7.1%, rgba(89, 72, 79, 1) 14.7%, rgba(69, 92, 79, 1) 28%, rgba(204, 85, 67, 1) 43.4%, rgba(237, 181, 121, 1) 60.2%, rgba(219, 230, 175, 1) 76.8%);
+}
+/*busqueda*/
+.group {
+  height: 60px;
+  width: 90%;
+  display: flex;
+  line-height: 28px;
+  align-items: center;
+  position: relative;
+  max-width: 700px;
+  margin: 10px 0px 10px 0px;
+}
+
+.input {
+  height: 40px;
+  line-height: 28px;
+  padding: 0 1rem;
+  width: 90%;
+  padding-left: 2.5rem;
+  outline: none;
+  background: linear-gradient(180deg,     rgb(56, 56, 56) 0%, rgb(36, 36, 36)   66%, rgb(41, 41, 41) 100%);
+  color: #fff;
+  transition: .3s ease;
+  border-radius: 10px;
+  border: 2px solid;
+  border-image: conic-gradient( #00F260, #0575E6,#64f38c) 1;
+}
+
+.input::placeholder {
+  color: #fff;
+}
+
+.input:focus::placeholder {
+  color: #999;
+}
+
+.icon {
+  position: absolute;
+  padding: 1rem;
+  color: white;
+}
+
+.Card-container{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.card-container{
+  display: flex;
+  flex-direction: column;
+  width: 270px;
+  height: auto;
+  border-radius: 0.75rem;
+  background-color: rgba(17, 24, 39, 1);
+  padding: 2rem;
+  color: rgba(243, 244, 246, 1);
+  margin: 0 25px 25px 25px;
+  text-align: center;
+}
+.card{
+  color: black;
+
+}
